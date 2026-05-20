@@ -109,7 +109,6 @@
 (type_params (identifier) @type.parameter)
 (param name: (identifier) @variable.parameter)
 (closure_param name: (identifier) @variable.parameter)
-(pipe_closure_param name: (identifier) @variable.parameter)
 
 ; -- Variable bindings -------------------------------------------------------
 

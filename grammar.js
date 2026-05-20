@@ -616,7 +616,6 @@ module.exports = grammar({
       $.for_expr,
       $.loop_expr,
       $.closure,
-      $.pipe_closure,
       $.move_closure,
       $.return_expr,
       $.break_expr,
@@ -632,7 +631,6 @@ module.exports = grammar({
     // `};` after `fn f() := { ... }`.
     _inline_term: $ => choice(
       $.closure,
-      $.pipe_closure,
       $.move_closure,
       $.return_expr,
       $.break_expr,
@@ -997,14 +995,6 @@ module.exports = grammar({
       field('body', $._term),
     ),
 
-    // |params| body  (Rust-style, also accepted)
-    pipe_closure: $ => seq(
-      '|',
-      optional(field('params', $.pipe_closure_params)),
-      '|',
-      field('body', $._term),
-    ),
-
     // move (params) => body
     move_closure: $ => seq(
       'move',
@@ -1024,13 +1014,6 @@ module.exports = grammar({
         ':',
         field('type', $._expr),
       ),
-      field('name', choice($.identifier, '_')),
-    ),
-
-    pipe_closure_params: $ => commaSep1($.pipe_closure_param),
-
-    pipe_closure_param: $ => choice(
-      seq(field('name', choice($.identifier, '_')), ':', field('type', $._expr)),
       field('name', choice($.identifier, '_')),
     ),
 

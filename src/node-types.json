@@ -403,10 +403,6 @@
           "named": true
         },
         {
-          "type": "pipe_closure",
-          "named": true
-        },
-        {
           "type": "question_expr",
           "named": true
         },
@@ -843,10 +839,6 @@
           },
           {
             "type": "pi_type",
-            "named": true
-          },
-          {
-            "type": "pipe_closure",
             "named": true
           },
           {
@@ -2920,10 +2912,6 @@
           "named": true
         },
         {
-          "type": "pipe_closure",
-          "named": true
-        },
-        {
           "type": "query_command",
           "named": true
         },
@@ -4486,10 +4474,6 @@
             "named": true
           },
           {
-            "type": "pipe_closure",
-            "named": true
-          },
-          {
             "type": "question_expr",
             "named": true
           },
@@ -6003,10 +5987,6 @@
             "named": true
           },
           {
-            "type": "pipe_closure",
-            "named": true
-          },
-          {
             "type": "question_expr",
             "named": true
           },
@@ -7217,10 +7197,6 @@
           "named": true
         },
         {
-          "type": "pipe_closure",
-          "named": true
-        },
-        {
           "type": "question_expr",
           "named": true
         },
@@ -7649,10 +7625,6 @@
           },
           {
             "type": "pi_type",
-            "named": true
-          },
-          {
-            "type": "pipe_closure",
             "named": true
           },
           {
@@ -11858,10 +11830,6 @@
             "named": true
           },
           {
-            "type": "pipe_closure",
-            "named": true
-          },
-          {
             "type": "question_expr",
             "named": true
           },
@@ -12528,10 +12496,6 @@
             "named": true
           },
           {
-            "type": "pipe_closure",
-            "named": true
-          },
-          {
             "type": "question_expr",
             "named": true
           },
@@ -12776,10 +12740,6 @@
           },
           {
             "type": "pi_type",
-            "named": true
-          },
-          {
-            "type": "pipe_closure",
             "named": true
           },
           {
@@ -13896,10 +13856,6 @@
           },
           {
             "type": "pi_type",
-            "named": true
-          },
-          {
-            "type": "pipe_closure",
             "named": true
           },
           {
@@ -15365,10 +15321,6 @@
           "named": true
         },
         {
-          "type": "pipe_closure",
-          "named": true
-        },
-        {
           "type": "question_expr",
           "named": true
         },
@@ -15903,953 +15855,6 @@
           }
         ]
       }
-    }
-  },
-  {
-    "type": "pipe_closure",
-    "named": true,
-    "fields": {
-      "body": {
-        "multiple": true,
-        "required": true,
-        "types": [
-          {
-            "type": "->",
-            "named": false
-          },
-          {
-            "type": "<->",
-            "named": false
-          },
-          {
-            "type": "binary_expr",
-            "named": true
-          },
-          {
-            "type": "block",
-            "named": true
-          },
-          {
-            "type": "bool_literal",
-            "named": true
-          },
-          {
-            "type": "break_expr",
-            "named": true
-          },
-          {
-            "type": "by_tactic",
-            "named": true
-          },
-          {
-            "type": "call_expr",
-            "named": true
-          },
-          {
-            "type": "cast_expr",
-            "named": true
-          },
-          {
-            "type": "char_literal",
-            "named": true
-          },
-          {
-            "type": "closure",
-            "named": true
-          },
-          {
-            "type": "continue_expr",
-            "named": true
-          },
-          {
-            "type": "deref_expr",
-            "named": true
-          },
-          {
-            "type": "dyn_type",
-            "named": true
-          },
-          {
-            "type": "field_expr",
-            "named": true
-          },
-          {
-            "type": "float_literal",
-            "named": true
-          },
-          {
-            "type": "for_expr",
-            "named": true
-          },
-          {
-            "type": "hole",
-            "named": true
-          },
-          {
-            "type": "if_expr",
-            "named": true
-          },
-          {
-            "type": "if_let_expr",
-            "named": true
-          },
-          {
-            "type": "impl_type",
-            "named": true
-          },
-          {
-            "type": "index_expr",
-            "named": true
-          },
-          {
-            "type": "integer_literal",
-            "named": true
-          },
-          {
-            "type": "loop_expr",
-            "named": true
-          },
-          {
-            "type": "match_expr",
-            "named": true
-          },
-          {
-            "type": "method_call_expr",
-            "named": true
-          },
-          {
-            "type": "move_closure",
-            "named": true
-          },
-          {
-            "type": "paren_expr",
-            "named": true
-          },
-          {
-            "type": "path",
-            "named": true
-          },
-          {
-            "type": "pi_type",
-            "named": true
-          },
-          {
-            "type": "pipe_closure",
-            "named": true
-          },
-          {
-            "type": "question_expr",
-            "named": true
-          },
-          {
-            "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
-            "type": "reference_expr",
-            "named": true
-          },
-          {
-            "type": "return_expr",
-            "named": true
-          },
-          {
-            "type": "self",
-            "named": true
-          },
-          {
-            "type": "slice_type",
-            "named": true
-          },
-          {
-            "type": "string_literal",
-            "named": true
-          },
-          {
-            "type": "struct_literal",
-            "named": true
-          },
-          {
-            "type": "struct_update",
-            "named": true
-          },
-          {
-            "type": "todo_kw",
-            "named": true
-          },
-          {
-            "type": "tuple_expr",
-            "named": true
-          },
-          {
-            "type": "type_call_expr",
-            "named": true
-          },
-          {
-            "type": "unary_expr",
-            "named": true
-          },
-          {
-            "type": "universe",
-            "named": true
-          },
-          {
-            "type": "while_expr",
-            "named": true
-          },
-          {
-            "type": "while_let_expr",
-            "named": true
-          }
-        ]
-      },
-      "left": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "->",
-            "named": false
-          },
-          {
-            "type": "<->",
-            "named": false
-          },
-          {
-            "type": "binary_expr",
-            "named": true
-          },
-          {
-            "type": "bool_literal",
-            "named": true
-          },
-          {
-            "type": "call_expr",
-            "named": true
-          },
-          {
-            "type": "cast_expr",
-            "named": true
-          },
-          {
-            "type": "char_literal",
-            "named": true
-          },
-          {
-            "type": "deref_expr",
-            "named": true
-          },
-          {
-            "type": "dyn_type",
-            "named": true
-          },
-          {
-            "type": "field_expr",
-            "named": true
-          },
-          {
-            "type": "float_literal",
-            "named": true
-          },
-          {
-            "type": "hole",
-            "named": true
-          },
-          {
-            "type": "impl_type",
-            "named": true
-          },
-          {
-            "type": "index_expr",
-            "named": true
-          },
-          {
-            "type": "integer_literal",
-            "named": true
-          },
-          {
-            "type": "method_call_expr",
-            "named": true
-          },
-          {
-            "type": "paren_expr",
-            "named": true
-          },
-          {
-            "type": "path",
-            "named": true
-          },
-          {
-            "type": "question_expr",
-            "named": true
-          },
-          {
-            "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
-            "type": "reference_expr",
-            "named": true
-          },
-          {
-            "type": "self",
-            "named": true
-          },
-          {
-            "type": "slice_type",
-            "named": true
-          },
-          {
-            "type": "string_literal",
-            "named": true
-          },
-          {
-            "type": "struct_literal",
-            "named": true
-          },
-          {
-            "type": "struct_update",
-            "named": true
-          },
-          {
-            "type": "todo_kw",
-            "named": true
-          },
-          {
-            "type": "tuple_expr",
-            "named": true
-          },
-          {
-            "type": "type_call_expr",
-            "named": true
-          },
-          {
-            "type": "unary_expr",
-            "named": true
-          },
-          {
-            "type": "universe",
-            "named": true
-          }
-        ]
-      },
-      "op": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "->",
-            "named": false
-          },
-          {
-            "type": "<->",
-            "named": false
-          }
-        ]
-      },
-      "params": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "pipe_closure_params",
-            "named": true
-          }
-        ]
-      },
-      "right": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "->",
-            "named": false
-          },
-          {
-            "type": "<->",
-            "named": false
-          },
-          {
-            "type": "binary_expr",
-            "named": true
-          },
-          {
-            "type": "bool_literal",
-            "named": true
-          },
-          {
-            "type": "call_expr",
-            "named": true
-          },
-          {
-            "type": "cast_expr",
-            "named": true
-          },
-          {
-            "type": "char_literal",
-            "named": true
-          },
-          {
-            "type": "deref_expr",
-            "named": true
-          },
-          {
-            "type": "dyn_type",
-            "named": true
-          },
-          {
-            "type": "field_expr",
-            "named": true
-          },
-          {
-            "type": "float_literal",
-            "named": true
-          },
-          {
-            "type": "hole",
-            "named": true
-          },
-          {
-            "type": "impl_type",
-            "named": true
-          },
-          {
-            "type": "index_expr",
-            "named": true
-          },
-          {
-            "type": "integer_literal",
-            "named": true
-          },
-          {
-            "type": "method_call_expr",
-            "named": true
-          },
-          {
-            "type": "paren_expr",
-            "named": true
-          },
-          {
-            "type": "path",
-            "named": true
-          },
-          {
-            "type": "question_expr",
-            "named": true
-          },
-          {
-            "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
-            "type": "reference_expr",
-            "named": true
-          },
-          {
-            "type": "self",
-            "named": true
-          },
-          {
-            "type": "slice_type",
-            "named": true
-          },
-          {
-            "type": "string_literal",
-            "named": true
-          },
-          {
-            "type": "struct_literal",
-            "named": true
-          },
-          {
-            "type": "struct_update",
-            "named": true
-          },
-          {
-            "type": "todo_kw",
-            "named": true
-          },
-          {
-            "type": "tuple_expr",
-            "named": true
-          },
-          {
-            "type": "type_call_expr",
-            "named": true
-          },
-          {
-            "type": "unary_expr",
-            "named": true
-          },
-          {
-            "type": "universe",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "pipe_closure_param",
-    "named": true,
-    "fields": {
-      "left": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "->",
-            "named": false
-          },
-          {
-            "type": "<->",
-            "named": false
-          },
-          {
-            "type": "binary_expr",
-            "named": true
-          },
-          {
-            "type": "bool_literal",
-            "named": true
-          },
-          {
-            "type": "call_expr",
-            "named": true
-          },
-          {
-            "type": "cast_expr",
-            "named": true
-          },
-          {
-            "type": "char_literal",
-            "named": true
-          },
-          {
-            "type": "deref_expr",
-            "named": true
-          },
-          {
-            "type": "dyn_type",
-            "named": true
-          },
-          {
-            "type": "field_expr",
-            "named": true
-          },
-          {
-            "type": "float_literal",
-            "named": true
-          },
-          {
-            "type": "hole",
-            "named": true
-          },
-          {
-            "type": "impl_type",
-            "named": true
-          },
-          {
-            "type": "index_expr",
-            "named": true
-          },
-          {
-            "type": "integer_literal",
-            "named": true
-          },
-          {
-            "type": "method_call_expr",
-            "named": true
-          },
-          {
-            "type": "paren_expr",
-            "named": true
-          },
-          {
-            "type": "path",
-            "named": true
-          },
-          {
-            "type": "question_expr",
-            "named": true
-          },
-          {
-            "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
-            "type": "reference_expr",
-            "named": true
-          },
-          {
-            "type": "self",
-            "named": true
-          },
-          {
-            "type": "slice_type",
-            "named": true
-          },
-          {
-            "type": "string_literal",
-            "named": true
-          },
-          {
-            "type": "struct_literal",
-            "named": true
-          },
-          {
-            "type": "struct_update",
-            "named": true
-          },
-          {
-            "type": "todo_kw",
-            "named": true
-          },
-          {
-            "type": "tuple_expr",
-            "named": true
-          },
-          {
-            "type": "type_call_expr",
-            "named": true
-          },
-          {
-            "type": "unary_expr",
-            "named": true
-          },
-          {
-            "type": "universe",
-            "named": true
-          }
-        ]
-      },
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "_",
-            "named": false
-          },
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      },
-      "op": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "->",
-            "named": false
-          },
-          {
-            "type": "<->",
-            "named": false
-          }
-        ]
-      },
-      "right": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "->",
-            "named": false
-          },
-          {
-            "type": "<->",
-            "named": false
-          },
-          {
-            "type": "binary_expr",
-            "named": true
-          },
-          {
-            "type": "bool_literal",
-            "named": true
-          },
-          {
-            "type": "call_expr",
-            "named": true
-          },
-          {
-            "type": "cast_expr",
-            "named": true
-          },
-          {
-            "type": "char_literal",
-            "named": true
-          },
-          {
-            "type": "deref_expr",
-            "named": true
-          },
-          {
-            "type": "dyn_type",
-            "named": true
-          },
-          {
-            "type": "field_expr",
-            "named": true
-          },
-          {
-            "type": "float_literal",
-            "named": true
-          },
-          {
-            "type": "hole",
-            "named": true
-          },
-          {
-            "type": "impl_type",
-            "named": true
-          },
-          {
-            "type": "index_expr",
-            "named": true
-          },
-          {
-            "type": "integer_literal",
-            "named": true
-          },
-          {
-            "type": "method_call_expr",
-            "named": true
-          },
-          {
-            "type": "paren_expr",
-            "named": true
-          },
-          {
-            "type": "path",
-            "named": true
-          },
-          {
-            "type": "question_expr",
-            "named": true
-          },
-          {
-            "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
-            "type": "reference_expr",
-            "named": true
-          },
-          {
-            "type": "self",
-            "named": true
-          },
-          {
-            "type": "slice_type",
-            "named": true
-          },
-          {
-            "type": "string_literal",
-            "named": true
-          },
-          {
-            "type": "struct_literal",
-            "named": true
-          },
-          {
-            "type": "struct_update",
-            "named": true
-          },
-          {
-            "type": "todo_kw",
-            "named": true
-          },
-          {
-            "type": "tuple_expr",
-            "named": true
-          },
-          {
-            "type": "type_call_expr",
-            "named": true
-          },
-          {
-            "type": "unary_expr",
-            "named": true
-          },
-          {
-            "type": "universe",
-            "named": true
-          }
-        ]
-      },
-      "type": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "->",
-            "named": false
-          },
-          {
-            "type": "<->",
-            "named": false
-          },
-          {
-            "type": "binary_expr",
-            "named": true
-          },
-          {
-            "type": "bool_literal",
-            "named": true
-          },
-          {
-            "type": "call_expr",
-            "named": true
-          },
-          {
-            "type": "cast_expr",
-            "named": true
-          },
-          {
-            "type": "char_literal",
-            "named": true
-          },
-          {
-            "type": "deref_expr",
-            "named": true
-          },
-          {
-            "type": "dyn_type",
-            "named": true
-          },
-          {
-            "type": "field_expr",
-            "named": true
-          },
-          {
-            "type": "float_literal",
-            "named": true
-          },
-          {
-            "type": "hole",
-            "named": true
-          },
-          {
-            "type": "impl_type",
-            "named": true
-          },
-          {
-            "type": "index_expr",
-            "named": true
-          },
-          {
-            "type": "integer_literal",
-            "named": true
-          },
-          {
-            "type": "method_call_expr",
-            "named": true
-          },
-          {
-            "type": "paren_expr",
-            "named": true
-          },
-          {
-            "type": "path",
-            "named": true
-          },
-          {
-            "type": "question_expr",
-            "named": true
-          },
-          {
-            "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
-            "type": "reference_expr",
-            "named": true
-          },
-          {
-            "type": "self",
-            "named": true
-          },
-          {
-            "type": "slice_type",
-            "named": true
-          },
-          {
-            "type": "string_literal",
-            "named": true
-          },
-          {
-            "type": "struct_literal",
-            "named": true
-          },
-          {
-            "type": "struct_update",
-            "named": true
-          },
-          {
-            "type": "todo_kw",
-            "named": true
-          },
-          {
-            "type": "tuple_expr",
-            "named": true
-          },
-          {
-            "type": "type_call_expr",
-            "named": true
-          },
-          {
-            "type": "unary_expr",
-            "named": true
-          },
-          {
-            "type": "universe",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "pipe_closure_params",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "pipe_closure_param",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -19068,10 +18073,6 @@
             "named": true
           },
           {
-            "type": "pipe_closure",
-            "named": true
-          },
-          {
             "type": "question_expr",
             "named": true
           },
@@ -19397,10 +18398,6 @@
           },
           {
             "type": "pi_type",
-            "named": true
-          },
-          {
-            "type": "pipe_closure",
             "named": true
           },
           {
@@ -20241,10 +19238,6 @@
           },
           {
             "type": "pi_type",
-            "named": true
-          },
-          {
-            "type": "pipe_closure",
             "named": true
           },
           {
@@ -21233,10 +20226,6 @@
           },
           {
             "type": "pi_type",
-            "named": true
-          },
-          {
-            "type": "pipe_closure",
             "named": true
           },
           {
@@ -24363,10 +23352,6 @@
         },
         {
           "type": "pi_type",
-          "named": true
-        },
-        {
-          "type": "pipe_closure",
           "named": true
         },
         {
@@ -28113,10 +27098,6 @@
           },
           {
             "type": "pi_type",
-            "named": true
-          },
-          {
-            "type": "pipe_closure",
             "named": true
           },
           {

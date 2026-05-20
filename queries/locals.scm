@@ -17,7 +17,6 @@
 (for_expr) @local.scope
 (loop_expr) @local.scope
 (closure) @local.scope
-(pipe_closure) @local.scope
 (move_closure) @local.scope
 
 ; ── Definitions ──────────────────────────────────────────────────────────────
@@ -44,7 +43,6 @@
 
 ; Closure parameters
 (closure_param name: (identifier) @local.definition)
-(pipe_closure_param name: (identifier) @local.definition)
 
 ; let / var bindings
 (let_stmt pattern: (binding_pattern) @local.definition)
