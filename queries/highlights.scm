@@ -110,6 +110,11 @@
 (param name: (identifier) @variable.parameter)
 (closure_param name: (identifier) @variable.parameter)
 
+; -- Lifetimes ---------------------------------------------------------------
+
+(lifetime) @label
+(lifetime_param name: (lifetime) @label)
+
 ; -- Variable bindings -------------------------------------------------------
 
 (let_stmt pattern: (binding_pattern) @variable)

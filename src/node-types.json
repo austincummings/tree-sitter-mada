@@ -1120,6 +1120,10 @@
             "named": true
           },
           {
+            "type": "lifetime",
+            "named": true
+          },
+          {
             "type": "method_call_expr",
             "named": true
           },
@@ -3069,6 +3073,10 @@
           },
           {
             "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "lifetime",
             "named": true
           },
           {
@@ -6248,6 +6256,10 @@
         },
         {
           "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lifetime",
           "named": true
         },
         {
@@ -10267,6 +10279,10 @@
           "named": true
         },
         {
+          "type": "lifetime",
+          "named": true
+        },
+        {
           "type": "method_call_expr",
           "named": true
         },
@@ -11257,6 +11273,10 @@
           },
           {
             "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "lifetime",
             "named": true
           },
           {
@@ -12561,6 +12581,36 @@
           },
           {
             "type": "while_let_expr",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "lifetime_param",
+    "named": true,
+    "fields": {
+      "bound": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "+",
+            "named": false
+          },
+          {
+            "type": "lifetime",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "lifetime",
             "named": true
           }
         ]
@@ -16901,7 +16951,7 @@
         "required": false,
         "types": [
           {
-            "type": "identifier",
+            "type": "lifetime",
             "named": true
           }
         ]
@@ -17459,7 +17509,18 @@
   {
     "type": "self_param",
     "named": true,
-    "fields": {},
+    "fields": {
+      "lifetime": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "lifetime",
+            "named": true
+          }
+        ]
+      }
+    },
     "children": {
       "multiple": false,
       "required": true,
@@ -26269,6 +26330,10 @@
         {
           "type": "identifier",
           "named": true
+        },
+        {
+          "type": "lifetime_param",
+          "named": true
         }
       ]
     }
@@ -28288,6 +28353,10 @@
             "named": true
           },
           {
+            "type": "lifetime",
+            "named": true
+          },
+          {
             "type": "method_call_expr",
             "named": true
           },
@@ -28491,6 +28560,16 @@
           }
         ]
       },
+      "lifetime": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "lifetime",
+            "named": true
+          }
+        ]
+      },
       "op": {
         "multiple": true,
         "required": false,
@@ -28641,7 +28720,7 @@
       },
       "type": {
         "multiple": true,
-        "required": true,
+        "required": false,
         "types": [
           {
             "type": "->",
@@ -30253,6 +30332,10 @@
   {
     "type": "let",
     "named": false
+  },
+  {
+    "type": "lifetime",
+    "named": true
   },
   {
     "type": "linarith",

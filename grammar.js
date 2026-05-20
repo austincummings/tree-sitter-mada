@@ -116,6 +116,12 @@ module.exports = grammar({
     self: _ => 'self',
     Self: _ => 'Self',
 
+    // Lifetime: apostrophe + identifier (Rust-style sigil).
+    // Used at declaration sites (`['a]`), use sites (`&'a T`), and in
+    // outlives bounds (`'a: 'b`). The leading `'` makes the lifetime
+    // syntactically distinct from a borrow of a variable.
+    lifetime: _ => token(seq("'", /[a-zA-Z_][a-zA-Z0-9_]*/)),
+
     // ───────────────────────────────────────────────────────────────────────
     // Literals
     // ───────────────────────────────────────────────────────────────────────
@@ -221,6 +227,7 @@ module.exports = grammar({
     ),
 
     _type_param: $ => choice(
+      $.lifetime_param, // 'a  or  'a: 'b + 'c
       $.bounded_param,  // A: Bound + Bound
       $.identifier,     // A  (shorthand for A: Type)
     ),
@@ -231,9 +238,23 @@ module.exports = grammar({
       field('bound', $._type_bound),
     ),
 
+    // 'a   or   'a: 'b + 'c   (lifetime declaration with optional outlives bounds)
+    lifetime_param: $ => seq(
+      field('name', $.lifetime),
+      optional(seq(
+        ':',
+        field('bound', $._lifetime_bound),
+      )),
+    ),
+
+    _lifetime_bound: $ => seq(
+      $.lifetime,
+      repeat(seq('+', $.lifetime)),
+    ),
+
     _type_bound: $ => seq(
-      $._expr,
-      repeat(seq('+', $._expr)),
+      choice($._expr, $.lifetime),
+      repeat(seq('+', choice($._expr, $.lifetime))),
     ),
 
     // ───────────────────────────────────────────────────────────────────────
@@ -253,9 +274,13 @@ module.exports = grammar({
       ),
     ),
 
-    // `self`, `&self`, or `&mut self` as a method receiver.
+    // `self`, `&self`, `&'a self`, `&mut self`, or `&'a mut self` as a method receiver.
     self_param: $ => seq(
-      optional(seq('&', optional('mut'))),
+      optional(seq(
+        '&',
+        optional(field('lifetime', $.lifetime)),
+        optional('mut'),
+      )),
       $.self,
     ),
 
@@ -282,10 +307,19 @@ module.exports = grammar({
       commaSep1($.where_item),
     ),
 
-    where_item: $ => seq(
-      field('type', $._expr),
-      ':',
-      field('bound', $._type_bound),
+    where_item: $ => choice(
+      // Type bound:  T: Bound + Bound
+      seq(
+        field('type', $._expr),
+        ':',
+        field('bound', $._type_bound),
+      ),
+      // Lifetime outlives bound:  'a: 'b + 'c
+      seq(
+        field('lifetime', $.lifetime),
+        ':',
+        field('bound', $._lifetime_bound),
+      ),
     ),
 
     // ───────────────────────────────────────────────────────────────────────
@@ -772,17 +806,13 @@ module.exports = grammar({
 
     arg_list: $ => commaSep1($._term),
 
-    // &T  &mut T  &a T  &a mut T
+    // &T  &mut T  &'a T  &'a mut T
     //
-    // The optional lifetime is a bare identifier between `&` and the type
-    // (Lang1 deliberately omits the Rust `'a` sigil — see design.md ~line 933).
-    // Disambiguation against `&x` (borrow of variable `x`): the lifetime form
-    // requires an additional type expression after the lifetime name. When
-    // both parses are possible (`&a Nat`), tree-sitter's GLR picks the one
-    // that consumes more tokens.
+    // Lifetimes carry the Rust-style `'` sigil, which keeps them
+    // syntactically distinct from a borrow of a variable (`&x`).
     reference_expr: $ => prec(PREC.UNARY, seq(
       '&',
-      optional(field('lifetime', $.identifier)),
+      optional(field('lifetime', $.lifetime)),
       optional('mut'),
       field('type', $._expr_no_arrow),
     )),
@@ -793,18 +823,18 @@ module.exports = grammar({
       field('operand', $._expr_no_arrow),
     )),
 
-    // impl Trait + Trait
+    // impl Trait + Trait + 'a
     impl_type: $ => seq(
       'impl',
-      $._expr_no_arrow,
-      repeat(seq('+', $._expr_no_arrow)),
+      choice($._expr_no_arrow, $.lifetime),
+      repeat(seq('+', choice($._expr_no_arrow, $.lifetime))),
     ),
 
-    // dyn Trait + Trait
+    // dyn Trait + Trait + 'a
     dyn_type: $ => seq(
       'dyn',
-      $._expr_no_arrow,
-      repeat(seq('+', $._expr_no_arrow)),
+      choice($._expr_no_arrow, $.lifetime),
+      repeat(seq('+', choice($._expr_no_arrow, $.lifetime))),
     ),
 
     // path covers both bare identifiers and qualified paths; both
