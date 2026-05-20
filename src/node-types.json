@@ -1693,6 +1693,16 @@
     "type": "axiom_decl",
     "named": true,
     "fields": {
+      "attribute": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "attribute",
+            "named": true
+          }
+        ]
+      },
       "left": {
         "multiple": true,
         "required": false,

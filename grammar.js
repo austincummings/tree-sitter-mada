@@ -395,15 +395,33 @@ module.exports = grammar({
     // axiom
     // ───────────────────────────────────────────────────────────────────────
 
-    axiom_decl: $ => seq(
-      'axiom',
-      field('name', $.identifier),
-      optional(field('type_params', $.type_params)),
-      '(',
-      optional(field('params', $.params)),
-      ')',
-      '->',
-      field('type', $._expr),
+    // Two surface forms:
+    //   axiom Int : Type;                       -- typeless: opaque constant of a given type
+    //   axiom nat_add(a: Nat, b: Nat) -> Nat;   -- function-shaped: parameters and return type
+    // Both accept attributes (e.g. `#[builtin("nat_add")]` to bind stdlib
+    // declarations into the compiler's BuiltinRegistry) and an optional
+    // trailing `;` for consistency with other declaration forms.
+    axiom_decl: $ => choice(
+      seq(
+        repeat(field('attribute', $.attribute)),
+        'axiom',
+        field('name', $.identifier),
+        ':',
+        field('type', $._expr),
+        optional(';'),
+      ),
+      seq(
+        repeat(field('attribute', $.attribute)),
+        'axiom',
+        field('name', $.identifier),
+        optional(field('type_params', $.type_params)),
+        '(',
+        optional(field('params', $.params)),
+        ')',
+        '->',
+        field('type', $._expr),
+        optional(';'),
+      ),
     ),
 
     // ───────────────────────────────────────────────────────────────────────
