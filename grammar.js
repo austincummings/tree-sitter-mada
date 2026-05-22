@@ -191,7 +191,7 @@ module.exports = grammar({
     query_command: $ => seq(
       field('kind', choice('#check', '#eval', '#print', '#reduce')),
       field('body', $._expr),
-      optional(';'),
+      ';',
     ),
 
     // ───────────────────────────────────────────────────────────────────────
@@ -408,7 +408,7 @@ module.exports = grammar({
         field('name', $.identifier),
         ':',
         field('type', $._expr),
-        optional(';'),
+        ';',
       ),
       seq(
         repeat(field('attribute', $.attribute)),
@@ -420,7 +420,7 @@ module.exports = grammar({
         ')',
         '->',
         field('type', $._expr),
-        optional(';'),
+        ';',
       ),
     ),
 
@@ -539,7 +539,7 @@ module.exports = grammar({
       field('name', $.identifier),
       optional(seq(':', field('bound', $._type_bound))),
       optional(seq(':=', field('default', $._expr))),
-      optional(';'),
+      ';',
     ),
 
     // ───────────────────────────────────────────────────────────────────────
