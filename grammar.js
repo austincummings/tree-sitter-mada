@@ -174,7 +174,10 @@ module.exports = grammar({
 
     attr_body: $ => seq(
       field('name', $.path),
-      optional(seq('(', commaSep($.attr_arg), ')')),
+      optional(choice(
+        seq('(', commaSep($.attr_arg), ')'),
+        seq('=', field('value', $.attr_arg)),
+      )),
     ),
 
     attr_arg: $ => choice(
@@ -328,7 +331,7 @@ module.exports = grammar({
 
     fn_decl: $ => seq(
       repeat(field('attribute', $.attribute)),
-      optional('extern'),
+      optional(seq('extern', optional(field('abi', $.string_literal)))),
       'fn',
       field('name', $.identifier),
       optional(field('type_params', $.type_params)),

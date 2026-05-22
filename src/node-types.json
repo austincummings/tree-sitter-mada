@@ -1661,6 +1661,16 @@
             "named": true
           }
         ]
+      },
+      "value": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "attr_arg",
+            "named": true
+          }
+        ]
       }
     },
     "children": {
@@ -7515,6 +7525,16 @@
     "type": "fn_decl",
     "named": true,
     "fields": {
+      "abi": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "string_literal",
+            "named": true
+          }
+        ]
+      },
       "attribute": {
         "multiple": true,
         "required": false,

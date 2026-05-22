@@ -315,60 +315,82 @@
           "type": "CHOICE",
           "members": [
             {
-              "type": "SEQ",
+              "type": "CHOICE",
               "members": [
                 {
-                  "type": "STRING",
-                  "value": "("
-                },
-                {
-                  "type": "CHOICE",
+                  "type": "SEQ",
                   "members": [
                     {
-                      "type": "SEQ",
+                      "type": "STRING",
+                      "value": "("
+                    },
+                    {
+                      "type": "CHOICE",
                       "members": [
                         {
-                          "type": "SYMBOL",
-                          "name": "attr_arg"
-                        },
-                        {
-                          "type": "REPEAT",
-                          "content": {
-                            "type": "SEQ",
-                            "members": [
-                              {
-                                "type": "STRING",
-                                "value": ","
-                              },
-                              {
-                                "type": "SYMBOL",
-                                "name": "attr_arg"
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "type": "CHOICE",
+                          "type": "SEQ",
                           "members": [
                             {
-                              "type": "STRING",
-                              "value": ","
+                              "type": "SYMBOL",
+                              "name": "attr_arg"
                             },
                             {
-                              "type": "BLANK"
+                              "type": "REPEAT",
+                              "content": {
+                                "type": "SEQ",
+                                "members": [
+                                  {
+                                    "type": "STRING",
+                                    "value": ","
+                                  },
+                                  {
+                                    "type": "SYMBOL",
+                                    "name": "attr_arg"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "type": "CHOICE",
+                              "members": [
+                                {
+                                  "type": "STRING",
+                                  "value": ","
+                                },
+                                {
+                                  "type": "BLANK"
+                                }
+                              ]
                             }
                           ]
+                        },
+                        {
+                          "type": "BLANK"
                         }
                       ]
                     },
                     {
-                      "type": "BLANK"
+                      "type": "STRING",
+                      "value": ")"
                     }
                   ]
                 },
                 {
-                  "type": "STRING",
-                  "value": ")"
+                  "type": "SEQ",
+                  "members": [
+                    {
+                      "type": "STRING",
+                      "value": "="
+                    },
+                    {
+                      "type": "FIELD",
+                      "name": "value",
+                      "content": {
+                        "type": "SYMBOL",
+                        "name": "attr_arg"
+                      }
+                    }
+                  ]
                 }
               ]
             },
@@ -1232,8 +1254,29 @@
           "type": "CHOICE",
           "members": [
             {
-              "type": "STRING",
-              "value": "extern"
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "STRING",
+                  "value": "extern"
+                },
+                {
+                  "type": "CHOICE",
+                  "members": [
+                    {
+                      "type": "FIELD",
+                      "name": "abi",
+                      "content": {
+                        "type": "SYMBOL",
+                        "name": "string_literal"
+                      }
+                    },
+                    {
+                      "type": "BLANK"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "type": "BLANK"
