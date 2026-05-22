@@ -644,6 +644,7 @@ module.exports = grammar({
       $.while_let_expr,
       $.for_expr,
       $.loop_expr,
+      $.by_block_tactic,
     ),
 
     // ───────────────────────────────────────────────────────────────────────
@@ -676,6 +677,7 @@ module.exports = grammar({
       $.break_expr,
       $.continue_expr,
       $.by_tactic,
+      $.by_block_tactic,
       $.pi_type,
       $._expr,
     ),
@@ -1072,12 +1074,23 @@ module.exports = grammar({
     // Tactic proofs
     // ───────────────────────────────────────────────────────────────────────
 
-    // `by tactic` or `by { tactic; ... }`
-    // tactic_block is NOT inside _tactic to avoid the ambiguity between
-    // `by (tactic_block)` and `by (_tactic=tactic_block)`.
+    // `by tactic` (inline form). Requires a trailing `;` at statement
+    // position. tactic_block is NOT inside _tactic to avoid the
+    // ambiguity between `by (tactic_block)` and `by (_tactic=tactic_block)`;
+    // the block form `by { ... }` is `by_block_tactic` (a block-form
+    // expression, like other block expressions it carries no trailing `;`).
     by_tactic: $ => seq(
       'by',
-      field('tactic', choice($.tactic_block, $._tactic)),
+      field('tactic', $._tactic),
+    ),
+
+    // `by { tactic; ... }` (block form). Like other block-form
+    // expressions (block, if_expr, match_expr, ...), it terminates
+    // itself with the closing `}` and forbids a trailing `;` at
+    // statement position.
+    by_block_tactic: $ => seq(
+      'by',
+      field('tactic', $.tactic_block),
     ),
 
     tactic_block: $ => seq(

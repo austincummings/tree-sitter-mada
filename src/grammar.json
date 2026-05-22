@@ -3228,6 +3228,10 @@
         {
           "type": "SYMBOL",
           "name": "loop_expr"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "by_block_tactic"
         }
       ]
     },
@@ -3321,6 +3325,10 @@
         {
           "type": "SYMBOL",
           "name": "by_tactic"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "by_block_tactic"
         },
         {
           "type": "SYMBOL",
@@ -5801,17 +5809,25 @@
           "type": "FIELD",
           "name": "tactic",
           "content": {
-            "type": "CHOICE",
-            "members": [
-              {
-                "type": "SYMBOL",
-                "name": "tactic_block"
-              },
-              {
-                "type": "SYMBOL",
-                "name": "_tactic"
-              }
-            ]
+            "type": "SYMBOL",
+            "name": "_tactic"
+          }
+        }
+      ]
+    },
+    "by_block_tactic": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "by"
+        },
+        {
+          "type": "FIELD",
+          "name": "tactic",
+          "content": {
+            "type": "SYMBOL",
+            "name": "tactic_block"
           }
         }
       ]

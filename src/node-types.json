@@ -307,6 +307,10 @@
           "named": true
         },
         {
+          "type": "by_block_tactic",
+          "named": true
+        },
+        {
           "type": "by_tactic",
           "named": true
         },
@@ -743,6 +747,10 @@
           },
           {
             "type": "break_expr",
+            "named": true
+          },
+          {
+            "type": "by_block_tactic",
             "named": true
           },
           {
@@ -2828,6 +2836,10 @@
           "named": true
         },
         {
+          "type": "by_block_tactic",
+          "named": true
+        },
+        {
           "type": "by_tactic",
           "named": true
         },
@@ -3886,6 +3898,22 @@
     }
   },
   {
+    "type": "by_block_tactic",
+    "named": true,
+    "fields": {
+      "tactic": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "tactic_block",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "by_tactic",
     "named": true,
     "fields": {
@@ -3899,10 +3927,6 @@
           },
           {
             "type": "tactic_assumption",
-            "named": true
-          },
-          {
-            "type": "tactic_block",
             "named": true
           },
           {
@@ -4403,6 +4427,10 @@
           },
           {
             "type": "break_expr",
+            "named": true
+          },
+          {
+            "type": "by_block_tactic",
             "named": true
           },
           {
@@ -5919,6 +5947,10 @@
             "named": true
           },
           {
+            "type": "by_block_tactic",
+            "named": true
+          },
+          {
             "type": "by_tactic",
             "named": true
           },
@@ -7133,6 +7165,10 @@
           "named": true
         },
         {
+          "type": "by_block_tactic",
+          "named": true
+        },
+        {
           "type": "by_tactic",
           "named": true
         },
@@ -7571,6 +7607,10 @@
           },
           {
             "type": "break_expr",
+            "named": true
+          },
+          {
+            "type": "by_block_tactic",
             "named": true
           },
           {
@@ -11784,6 +11824,10 @@
             "named": true
           },
           {
+            "type": "by_block_tactic",
+            "named": true
+          },
+          {
             "type": "by_tactic",
             "named": true
           },
@@ -12450,6 +12494,10 @@
             "named": true
           },
           {
+            "type": "by_block_tactic",
+            "named": true
+          },
+          {
             "type": "by_tactic",
             "named": true
           },
@@ -12724,6 +12772,10 @@
           },
           {
             "type": "break_expr",
+            "named": true
+          },
+          {
+            "type": "by_block_tactic",
             "named": true
           },
           {
@@ -13840,6 +13892,10 @@
           },
           {
             "type": "break_expr",
+            "named": true
+          },
+          {
+            "type": "by_block_tactic",
             "named": true
           },
           {
@@ -15302,6 +15358,10 @@
         },
         {
           "type": "break_expr",
+          "named": true
+        },
+        {
+          "type": "by_block_tactic",
           "named": true
         },
         {
@@ -18068,6 +18128,10 @@
             "named": true
           },
           {
+            "type": "by_block_tactic",
+            "named": true
+          },
+          {
             "type": "by_tactic",
             "named": true
           },
@@ -18393,6 +18457,10 @@
           },
           {
             "type": "break_expr",
+            "named": true
+          },
+          {
+            "type": "by_block_tactic",
             "named": true
           },
           {
@@ -19233,6 +19301,10 @@
           },
           {
             "type": "break_expr",
+            "named": true
+          },
+          {
+            "type": "by_block_tactic",
             "named": true
           },
           {
@@ -20221,6 +20293,10 @@
           },
           {
             "type": "break_expr",
+            "named": true
+          },
+          {
+            "type": "by_block_tactic",
             "named": true
           },
           {
@@ -23343,6 +23419,10 @@
         },
         {
           "type": "break_expr",
+          "named": true
+        },
+        {
+          "type": "by_block_tactic",
           "named": true
         },
         {
@@ -27097,6 +27177,10 @@
           },
           {
             "type": "break_expr",
+            "named": true
+          },
+          {
+            "type": "by_block_tactic",
             "named": true
           },
           {
