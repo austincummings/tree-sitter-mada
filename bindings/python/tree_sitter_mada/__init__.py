@@ -1,4 +1,4 @@
-"Lang1 grammar for tree-sitter"
+"Mada grammar for tree-sitter"
 
 from ._binding import language
 

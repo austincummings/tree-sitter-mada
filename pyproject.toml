@@ -3,10 +3,10 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tree-sitter-lang1"
-description = "Lang1 grammar for tree-sitter"
+name = "tree-sitter-mada"
+description = "Mada grammar for tree-sitter"
 version = "0.0.1"
-keywords = ["incremental", "parsing", "tree-sitter", "lang1"]
+keywords = ["incremental", "parsing", "tree-sitter", "mada"]
 classifiers = [
   "Intended Audience :: Developers",
   "License :: OSI Approved :: MIT License",
@@ -19,7 +19,7 @@ license.text = "MIT"
 readme = "README.md"
 
 [project.urls]
-Homepage = "https://github.com/tree-sitter/tree-sitter-lang1"
+Homepage = "https://github.com/tree-sitter/tree-sitter-mada"
 
 [project.optional-dependencies]
 core = ["tree-sitter~=0.21"]

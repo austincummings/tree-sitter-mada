@@ -1,7 +1,7 @@
 /**
- * Tree-sitter grammar for lang1.
+ * Tree-sitter grammar for Mada.
  *
- * Lang1 is a dependently-typed language with Rust-familiar syntax.
+ * Mada is a dependently-typed language with Rust-familiar syntax.
  * Types and expressions are the same syntactic category (unified term language).
  */
 
@@ -27,7 +27,7 @@ const PREC = {
 };
 
 module.exports = grammar({
-  name: 'lang1',
+  name: 'mada',
 
   extras: $ => [/\s+/, $.line_comment],
 

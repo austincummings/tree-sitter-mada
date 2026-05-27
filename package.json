@@ -1,13 +1,13 @@
 {
-  "name": "tree-sitter-lang1",
+  "name": "tree-sitter-mada",
   "version": "0.1.0",
-  "description": "Tree-sitter grammar for lang1",
+  "description": "Tree-sitter grammar for Mada",
   "main": "bindings/node",
   "types": "bindings/node",
   "keywords": [
     "parser",
     "tree-sitter",
-    "lang1"
+    "mada"
   ],
   "files": [
     "grammar.js",
@@ -41,9 +41,9 @@
   },
   "tree-sitter": [
     {
-      "scope": "source.lang1",
+      "scope": "source.mada",
       "file-types": [
-        "lang1"
+        "mada"
       ],
       "highlights": "queries/highlights.scm",
       "locals": "queries/locals.scm",

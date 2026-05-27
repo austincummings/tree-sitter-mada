@@ -1,4 +1,4 @@
-module github.com/tree-sitter/tree-sitter-lang1
+module github.com/tree-sitter/tree-sitter-mada
 
 go 1.22
 

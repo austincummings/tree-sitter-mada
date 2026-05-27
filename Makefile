@@ -1,6 +1,6 @@
 VERSION := 0.0.1
 
-LANGUAGE_NAME := tree-sitter-lang1
+LANGUAGE_NAME := tree-sitter-mada
 
 # repository
 SRC_DIR := src

@@ -1,6 +1,6 @@
-; Tree-sitter highlight queries for lang1.
+; Tree-sitter highlight queries for Mada.
 ; These are the canonical queries; the Zed extension copies them to its own
-; languages/lang1/highlights.scm (Zed does not read from the grammar package).
+; languages/mada/highlights.scm (Zed does not read from the grammar package).
 
 ; -- Comments ----------------------------------------------------------------
 

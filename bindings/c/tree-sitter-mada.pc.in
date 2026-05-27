@@ -2,10 +2,10 @@ prefix=@PREFIX@
 libdir=@LIBDIR@
 includedir=@INCLUDEDIR@
 
-Name: tree-sitter-lang1
-Description: Lang1 grammar for tree-sitter
+Name: tree-sitter-mada
+Description: Mada grammar for tree-sitter
 URL: @URL@
 Version: @VERSION@
 Requires: @REQUIRES@
-Libs: -L${libdir} @ADDITIONAL_LIBS@ -ltree-sitter-lang1
+Libs: -L${libdir} @ADDITIONAL_LIBS@ -ltree-sitter-mada
 Cflags: -I${includedir}
