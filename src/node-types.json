@@ -88,10 +88,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -237,10 +233,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -420,10 +412,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -641,10 +629,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -874,10 +858,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -1021,10 +1001,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -1176,10 +1152,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -1314,10 +1286,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -1449,10 +1417,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -1611,10 +1575,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -1846,10 +1806,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -2018,10 +1974,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -2153,10 +2105,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -2299,10 +2247,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -2514,10 +2458,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -2673,10 +2613,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -2822,10 +2758,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -3028,10 +2960,6 @@
           "named": true
         },
         {
-          "type": "raw_ptr_type",
-          "named": true
-        },
-        {
           "type": "reference_expr",
           "named": true
         },
@@ -3204,10 +3132,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -3339,10 +3263,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -3504,10 +3424,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -3645,10 +3561,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -3800,10 +3712,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -3935,10 +3843,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -4184,10 +4088,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -4320,10 +4220,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -4447,10 +4343,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -4646,10 +4538,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -4793,10 +4681,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -4958,10 +4842,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -5093,10 +4973,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -5237,10 +5113,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -5406,10 +5278,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -5541,10 +5409,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -5713,10 +5577,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -5875,10 +5735,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -6010,10 +5866,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -6203,10 +6055,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -6351,10 +6199,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -6488,10 +6332,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -6654,10 +6494,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -6789,10 +6625,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -6951,10 +6783,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -7118,10 +6946,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -7267,10 +7091,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -7453,10 +7273,6 @@
           "named": true
         },
         {
-          "type": "raw_ptr_type",
-          "named": true
-        },
-        {
           "type": "reference_expr",
           "named": true
         },
@@ -7611,10 +7427,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -7906,10 +7718,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -8053,10 +7861,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -8228,10 +8032,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -8363,10 +8163,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -8550,10 +8346,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -8685,10 +8477,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -8890,10 +8678,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -9036,10 +8820,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -9195,10 +8975,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -9344,10 +9120,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -9519,10 +9291,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -9721,10 +9489,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -9866,10 +9630,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -10023,10 +9783,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -10175,10 +9931,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -10313,10 +10065,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -10448,10 +10196,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -10629,10 +10373,6 @@
           "named": true
         },
         {
-          "type": "raw_ptr_type",
-          "named": true
-        },
-        {
           "type": "reference_expr",
           "named": true
         },
@@ -10772,10 +10512,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -10907,10 +10643,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -11062,10 +10794,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -11189,10 +10917,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -11343,10 +11067,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -11508,10 +11228,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -11651,10 +11367,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -11836,10 +11548,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -12038,10 +11746,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -12225,10 +11929,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -12384,10 +12084,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -12586,10 +12282,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -12721,10 +12413,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -12911,10 +12599,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -13199,10 +12883,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -13346,10 +13026,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -13551,10 +13227,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -13692,10 +13364,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -13847,10 +13515,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -13982,10 +13646,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -14148,10 +13808,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -14347,10 +14003,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -14494,10 +14146,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -14659,10 +14307,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -14794,10 +14438,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -15037,10 +14677,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -15207,10 +14843,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -15342,10 +14974,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -15514,10 +15142,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -15663,10 +15287,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -15846,10 +15466,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -16038,10 +15654,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -16200,10 +15812,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -16335,10 +15943,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -16479,10 +16083,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -16642,10 +16242,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -16794,10 +16390,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -16930,10 +16522,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -17063,10 +16651,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -17207,146 +16791,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
-            "type": "reference_expr",
-            "named": true
-          },
-          {
-            "type": "self",
-            "named": true
-          },
-          {
-            "type": "slice_type",
-            "named": true
-          },
-          {
-            "type": "string_literal",
-            "named": true
-          },
-          {
-            "type": "struct_literal",
-            "named": true
-          },
-          {
-            "type": "struct_update",
-            "named": true
-          },
-          {
-            "type": "todo_kw",
-            "named": true
-          },
-          {
-            "type": "tuple_expr",
-            "named": true
-          },
-          {
-            "type": "type_call_expr",
-            "named": true
-          },
-          {
-            "type": "typed_integer_literal",
-            "named": true
-          },
-          {
-            "type": "unary_expr",
-            "named": true
-          },
-          {
-            "type": "universe",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "raw_ptr_type",
-    "named": true,
-    "fields": {
-      "type": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "binary_expr",
-            "named": true
-          },
-          {
-            "type": "bool_literal",
-            "named": true
-          },
-          {
-            "type": "call_expr",
-            "named": true
-          },
-          {
-            "type": "cast_expr",
-            "named": true
-          },
-          {
-            "type": "char_literal",
-            "named": true
-          },
-          {
-            "type": "deref_expr",
-            "named": true
-          },
-          {
-            "type": "dyn_type",
-            "named": true
-          },
-          {
-            "type": "field_expr",
-            "named": true
-          },
-          {
-            "type": "float_literal",
-            "named": true
-          },
-          {
-            "type": "hole",
-            "named": true
-          },
-          {
-            "type": "impl_type",
-            "named": true
-          },
-          {
-            "type": "index_expr",
-            "named": true
-          },
-          {
-            "type": "integer_literal",
-            "named": true
-          },
-          {
-            "type": "method_call_expr",
-            "named": true
-          },
-          {
-            "type": "paren_expr",
-            "named": true
-          },
-          {
-            "type": "path",
-            "named": true
-          },
-          {
-            "type": "question_expr",
-            "named": true
-          },
-          {
-            "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -17547,10 +16991,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -17688,10 +17128,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -17843,10 +17279,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -17978,10 +17410,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -18151,10 +17579,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -18303,10 +17727,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -18431,10 +17851,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -18688,10 +18104,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -18835,10 +18247,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -19028,10 +18436,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -19202,10 +18606,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -19366,10 +18766,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -19501,10 +18897,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -19663,10 +19055,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -19892,10 +19280,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -20039,10 +19423,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -20214,10 +19594,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -20349,10 +19725,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -20556,10 +19928,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -20715,10 +20083,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -20908,10 +20272,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -21074,10 +20434,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -21209,10 +20565,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -21374,10 +20726,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -21509,10 +20857,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -21708,10 +21052,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -21843,10 +21183,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -22008,10 +21344,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -22159,10 +21491,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -22314,10 +21642,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -22442,10 +21766,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -22828,10 +22148,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -22980,10 +22296,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -23112,10 +22424,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -23349,10 +22657,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -23501,10 +22805,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -23629,10 +22929,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -23775,10 +23071,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -23924,10 +23216,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -24111,10 +23399,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -24303,10 +23587,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -24455,10 +23735,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -24583,10 +23859,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -24729,10 +24001,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -24881,10 +24149,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -25009,10 +24273,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -25155,10 +24415,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -25307,10 +24563,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -25435,10 +24687,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -25591,10 +24839,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -25743,10 +24987,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -25871,10 +25111,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -26072,10 +25308,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -26224,10 +25456,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -26352,10 +25580,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -26566,10 +25790,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -26717,10 +25937,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -26882,10 +26098,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -27017,10 +26229,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -27219,10 +26427,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -27493,10 +26697,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -27655,10 +26855,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -27790,10 +26986,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -27983,10 +27175,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -28149,10 +27337,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -28284,10 +27468,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -28449,10 +27629,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -28584,10 +27760,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -28751,10 +27923,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -28913,10 +28081,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -29048,10 +28212,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -29218,10 +28378,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -29353,10 +28509,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -29518,10 +28670,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -29653,10 +28801,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -29810,10 +28954,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -29945,10 +29085,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -30100,10 +29236,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -30228,10 +29360,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {
@@ -30381,10 +29509,6 @@
           },
           {
             "type": "range_expr",
-            "named": true
-          },
-          {
-            "type": "raw_ptr_type",
             "named": true
           },
           {
@@ -30586,10 +29710,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -30724,10 +29844,6 @@
             "named": true
           },
           {
-            "type": "raw_ptr_type",
-            "named": true
-          },
-          {
             "type": "reference_expr",
             "named": true
           },
@@ -30852,10 +29968,6 @@
         },
         {
           "type": "range_expr",
-          "named": true
-        },
-        {
-          "type": "raw_ptr_type",
           "named": true
         },
         {

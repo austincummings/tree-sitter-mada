@@ -758,7 +758,6 @@ module.exports = grammar({
       $.todo_kw,
       $.self,
       $.slice_type,
-      $.raw_ptr_type,
     ),
 
     // Binary expressions (left-associative by default)
@@ -944,13 +943,6 @@ module.exports = grammar({
 
     // [T]  — slice type (only meaningful after & or &mut)
     slice_type: $ => seq('[', $._expr, ']'),
-
-    // *mut T / *const T — raw pointer types
-    raw_ptr_type: $ => prec(PREC.UNARY, seq(
-      '*',
-      choice('mut', 'const'),
-      field('type', $._expr_no_arrow),
-    )),
 
     // Universe literals
     universe: $ => choice(

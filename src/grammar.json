@@ -3599,10 +3599,6 @@
         {
           "type": "SYMBOL",
           "name": "slice_type"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "raw_ptr_type"
         }
       ]
     },
@@ -4917,40 +4913,6 @@
           "value": "]"
         }
       ]
-    },
-    "raw_ptr_type": {
-      "type": "PREC",
-      "value": 12,
-      "content": {
-        "type": "SEQ",
-        "members": [
-          {
-            "type": "STRING",
-            "value": "*"
-          },
-          {
-            "type": "CHOICE",
-            "members": [
-              {
-                "type": "STRING",
-                "value": "mut"
-              },
-              {
-                "type": "STRING",
-                "value": "const"
-              }
-            ]
-          },
-          {
-            "type": "FIELD",
-            "name": "type",
-            "content": {
-              "type": "SYMBOL",
-              "name": "_expr_no_arrow"
-            }
-          }
-        ]
-      }
     },
     "universe": {
       "type": "CHOICE",
