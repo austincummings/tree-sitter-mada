@@ -1,0 +1,15 @@
+fn f(a: Nat) -> Nat := g(a) + a.h();
+// <- keyword
+// ^ function
+//   ^ variable.parameter
+//      ^ type.builtin
+//                     ^ function.call
+//                          ^ operator
+//                              ^ function.method
+
+fn loopy(n: Nat) -> Nat := if n == 0 { 1 } else { loop { break 2 } }
+//                         ^ keyword.control
+//                              ^ operator
+//                                          ^ keyword.control
+//                                                 ^ keyword.control
+//                                                        ^ keyword.control

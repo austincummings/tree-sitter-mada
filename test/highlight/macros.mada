@@ -1,0 +1,15 @@
+#[macro]
+// <- attribute
+spec fn dup(x: Syntax) -> Syntax := `($x + $x);
+// <- keyword
+//      ^ function
+//             ^ type
+//                                  ^ punctuation.special
+//                                    ^ punctuation.special
+//                                     ^ variable.parameter
+
+fn use_dup() -> Nat := dup!(1);
+// ^ function
+//                     ^ function.macro
+//                        ^ punctuation.special
+//                          ^ number

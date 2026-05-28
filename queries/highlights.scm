@@ -71,6 +71,24 @@
 
 (query_command ["#check" "#eval" "#print" "#reduce"] @keyword.special)
 
+; -- Identifier classification (generic; specific rules below override) ------
+; Tree-sitter highlighting is last-match-wins: when two patterns capture the
+; same node, the one appearing LATER in this file takes precedence. These
+; broad identifier rules are placed before the role-specific rules (function
+; names, type definitions, variants, fields, ...) so that the more specific
+; captures win. Within this pair, the builtin-types rule follows the
+; capitalized catch-all so builtin names resolve to @type.builtin rather than
+; plain @type.
+
+; Capitalized identifiers default to types.
+((identifier) @type
+  (#match? @type "^[A-Z]"))
+
+; Builtin types refine the capitalized default.
+((identifier) @type.builtin
+  (#match? @type.builtin
+    "^(Nat|Int|Bool|Float|Char|String|Unit|Never|BitVec|Box|UnsafePointer|Vec|List|Option|Result|HashMap|HashSet|Alloc|IO|Panic|Effect|Lifetime|Universe|Seq|Prop)$"))
+
 ; -- Function names ----------------------------------------------------------
 
 (fn_decl name: (identifier) @function)
@@ -80,13 +98,14 @@
 (method_call_expr method: (identifier) @function.method)
 
 ; -- Macros / quotation ------------------------------------------------------
-; Placed before the capitalized-identifier catch-all so the macro name wins.
+; These role-specific rules follow the generic identifier classification
+; above, so under last-match-wins the macro name beats the capitalized
+; catch-all.
 
-; Macro call `name!(...)`: the invoked macro reads as a macro-function; the
-; `!` is the macro sigil (scoped here so it overrides the generic operator
-; rule for the bang).
+; Macro call `name!(...)`: the invoked macro reads as a macro-function. The
+; `!` macro sigil is captured at the bottom of the file, after the generic
+; operator list, so last-match-wins lets it override the bare `!` operator.
 (macro_call_expr path: (path (identifier) @function.macro))
-(macro_call_expr "!" @punctuation.special)
 
 ; Quotation `` `(term) `` and quote patterns: the backtick marks the
 ; quote boundary.
@@ -140,17 +159,6 @@
 (let_stmt pattern: (binding_pattern) @variable)
 (var_stmt name: (identifier) @variable)
 
-; -- Builtin types -----------------------------------------------------------
-
-((identifier) @type.builtin
-  (#match? @type.builtin
-    "^(Nat|Int|Bool|Float|Char|String|Unit|Never|BitVec|Box|UnsafePointer|Vec|List|Option|Result|HashMap|HashSet|Alloc|IO|Panic|Effect|Lifetime|Universe|Seq|Prop)$"))
-
-; -- Capitalized identifiers treated as types --------------------------------
-
-((identifier) @type
-  (#match? @type "^[A-Z]"))
-
 ; -- Operators ---------------------------------------------------------------
 
 [":=" "=>" "->" "<->" ":" "::" "=" "==" "!=" "<" ">" "<=" ">="
@@ -161,3 +169,8 @@
 
 ["(" ")" "[" "]" "{" "}"] @punctuation.bracket
 ["," ";" "."] @punctuation.delimiter
+
+; -- Macro sigil -------------------------------------------------------------
+; Overrides the generic `!` operator above for the macro-call bang. Placed
+; last so last-match-wins selects it over the operator rule.
+(macro_call_expr "!" @punctuation.special)

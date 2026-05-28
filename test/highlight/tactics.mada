@@ -1,0 +1,34 @@
+fn pf() -> Bool := by {
+// <- keyword
+// ^ function
+//         ^ type.builtin
+//                 ^ keyword.special
+    intro x;
+//  ^ keyword.special
+    apply f;
+//  ^ keyword.special
+    exact y;
+//  ^ keyword.special
+    have h := x;
+//  ^ keyword.special
+    show p;
+//  ^ keyword.special
+    simp;
+//  ^ keyword.special
+    linarith;
+//  ^ keyword.special
+    omega;
+//  ^ keyword.special
+    rfl;
+//  ^ keyword.special
+    trivial;
+//  ^ keyword.special
+    assumption;
+//  ^ keyword.special
+    constructor;
+//  ^ keyword.special
+    left;
+//  ^ keyword.special
+    right;
+//  ^ keyword.special
+}

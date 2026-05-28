@@ -1,0 +1,26 @@
+struct Point { x: Nat, y: Nat }
+// <- keyword
+//     ^ type.definition
+//             ^ variable.member
+//                ^ type.builtin
+
+const MAX: Nat := 100;
+// <- keyword
+//    ^ constant
+//         ^ type.builtin
+//             ^ operator
+//                ^ number
+
+enum Color { Red, Green }
+// <- keyword
+//   ^ type.definition
+//           ^ constructor
+//                ^ constructor
+
+fn make() -> Point := Point { x := 0, y := 0 };
+// <- keyword
+// ^ function
+//        ^ operator
+//           ^ type.definition
+//                    ^ type.definition
+//                            ^ variable.member

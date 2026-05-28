@@ -1,0 +1,28 @@
+const B: Bool := true;
+//    ^ constant
+//       ^ type.builtin
+//               ^ boolean
+
+const N: Nat := 42;
+//    ^ constant
+//       ^ type.builtin
+//              ^ number
+
+const S: String := "hi";
+//    ^ constant
+//       ^ type.builtin
+//                 ^ string
+
+const C: Char := 'x';
+//    ^ constant
+//       ^ type.builtin
+//               ^ character
+
+const F: Float := 1.5;
+//    ^ constant
+//       ^ type.builtin
+//                ^ number
+
+const H: Nat := _;
+//    ^ constant
+//              ^ variable.special

@@ -25,7 +25,7 @@
   name: (identifier) @name) @definition.constructor
 
 (call_expr
-  function: (identifier) @name) @reference.call
+  function: (path (identifier) @name)) @reference.call
 
 (method_call_expr
   method: (identifier) @name) @reference.call
