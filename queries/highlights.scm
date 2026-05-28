@@ -79,6 +79,25 @@
 (call_expr function: (path (identifier) @function.call))
 (method_call_expr method: (identifier) @function.method)
 
+; -- Macros / quotation ------------------------------------------------------
+; Placed before the capitalized-identifier catch-all so the macro name wins.
+
+; Macro call `name!(...)`: the invoked macro reads as a macro-function; the
+; `!` is the macro sigil (scoped here so it overrides the generic operator
+; rule for the bang).
+(macro_call_expr path: (path (identifier) @function.macro))
+(macro_call_expr "!" @punctuation.special)
+
+; Quotation `` `(term) `` and quote patterns: the backtick marks the
+; quote boundary.
+(quote_expr "`" @punctuation.special)
+(quote_pattern "`" @punctuation.special)
+
+; Antiquotation `$name` / `${expr}`: `$` is the splice sigil; the `$name`
+; shorthand names the spliced variable.
+(antiquote_expr "$" @punctuation.special)
+(antiquote_expr name: (identifier) @variable)
+
 ; -- Type names --------------------------------------------------------------
 
 (struct_decl name: (identifier) @type.definition)
