@@ -24,6 +24,9 @@ const PREC = {
   CALL:      16,   // f(x)  f[x]
   FIELD:     17,   // x.f  x.0
   METHOD:    18,   // x.f(args) — higher than field so method wins over field+call
+  // `path !(...)` — must win over `path` followed by unary `!`. See
+  // specs/metaprogramming.md.
+  MACRO_CALL: 19,
 };
 
 module.exports = grammar({
@@ -758,6 +761,10 @@ module.exports = grammar({
       $.todo_kw,
       $.self,
       $.slice_type,
+      // Metaprogramming (specs/metaprogramming.md, Phase 1).
+      $.macro_call_expr,
+      $.quote_expr,
+      $.antiquote_expr,
     ),
 
     // Binary expressions (left-associative by default)
@@ -943,6 +950,58 @@ module.exports = grammar({
 
     // [T]  — slice type (only meaningful after & or &mut)
     slice_type: $ => seq('[', $._expr, ']'),
+
+    // ───────────────────────────────────────────────────────────────────────
+    // Metaprogramming surface (specs/metaprogramming.md, Phase 1)
+    // ───────────────────────────────────────────────────────────────────────
+    //
+    // `path!(...)`, `path![...]`, `path!{...}` — three equivalent bracket
+    // shapes. The no-whitespace constraint between `path` and `!` is
+    // enforced at lowering time (compare byte offsets), not in the grammar.
+    // High precedence so `vec!(1)` wins over `vec` followed by unary
+    // `!(1)` (`!` as logical not on a parenthesized expression).
+    macro_call_expr: $ => prec(PREC.MACRO_CALL, seq(
+      field('path', $.path),
+      '!',
+      choice(
+        field('args_paren', $.macro_args_paren),
+        field('args_square', $.macro_args_square),
+        field('args_brace', $.macro_args_brace),
+      ),
+    )),
+
+    // Phase 1 term-arg-mode capture: each arg is a `_term`, comma-separated,
+    // trailing comma allowed. Phase 7 raw mode replaces these with a single
+    // opaque `RawSource` capture via an external scanner; the AST node
+    // changes shape at that point.
+    macro_args_paren:  $ => seq('(', optional($.macro_arg_list), ')'),
+    macro_args_square: $ => seq('[', optional($.macro_arg_list), ']'),
+    macro_args_brace:  $ => seq('{', optional($.macro_arg_list), '}'),
+
+    macro_arg_list: $ => seq(
+      $._term,
+      repeat(seq(',', $._term)),
+      optional(','),
+    ),
+
+    // Quotation `` `(term) ``. The backtick is followed by `(`, then a
+    // normal Mada term, then `)`. Other tokens after a backtick are a
+    // parse error -- the lowerer emits `E_QUOTE_EXPECTED_PAREN`.
+    quote_expr: $ => seq(
+      '`',
+      '(',
+      field('body', $._term),
+      ')',
+    ),
+
+    // Antiquotation `$name` (single-identifier shorthand) or `${expr}`.
+    // In expression position the inner value must be `Syntax`. In pattern
+    // position (`quote_pattern_expr`), the `$name` form *binds* the matched
+    // sub-tree; `${expr}` is rejected at lowering.
+    antiquote_expr: $ => choice(
+      seq('$', field('name', $.identifier)),
+      seq('$', '{', field('body', $._expr), '}'),
+    ),
 
     // Universe literals
     universe: $ => choice(
@@ -1204,6 +1263,19 @@ module.exports = grammar({
       $.path_pattern,
       $.nat_succ_pattern,
       $.as_pattern,
+      $.quote_pattern,
+    ),
+
+    // Quote pattern `` `(template) `` (specs/metaprogramming.md). Same outer
+    // shape as `quote_expr`; the body is a normal term, but inside it any
+    // `$name` antiquotation acts as a pattern-position binder rather than a
+    // splice. `${expr}` is rejected at lowering with `E_ANTIQUOTE_IN_PATTERN`
+    // because patterns destructure rather than compute.
+    quote_pattern: $ => seq(
+      '`',
+      '(',
+      field('body', $._term),
+      ')',
     ),
 
     wildcard_pattern: _ => '_',
