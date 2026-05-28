@@ -43,7 +43,7 @@
 
 (bool_literal) @boolean
 (integer_literal) @number
-(int_suffix) @type.builtin
+(int_suffix) @number
 (float_literal) @number
 (string_literal) @string
 (char_literal) @character
@@ -125,7 +125,7 @@
 
 ((identifier) @type.builtin
   (#match? @type.builtin
-    "^(Nat|Int|Bool|Float|Char|String|Unit|Never|BitVec|Box|Vec|List|Option|Result|HashMap|HashSet|Alloc|IO|Panic|Effect|Lifetime|Universe|Seq|Prop)$"))
+    "^(Nat|Int|Bool|Float|Char|String|Unit|Never|BitVec|Box|UnsafePointer|Vec|List|Option|Result|HashMap|HashSet|Alloc|IO|Panic|Effect|Lifetime|Universe|Seq|Prop)$"))
 
 ; -- Capitalized identifiers treated as types --------------------------------
 
