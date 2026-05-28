@@ -43,6 +43,7 @@
 
 (bool_literal) @boolean
 (integer_literal) @number
+(int_suffix) @type.builtin
 (float_literal) @number
 (string_literal) @string
 (char_literal) @character

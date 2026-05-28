@@ -127,6 +127,7 @@ module.exports = grammar({
     // ───────────────────────────────────────────────────────────────────────
 
     _literal: $ => choice(
+      $.typed_integer_literal,
       $.integer_literal,
       $.float_literal,
       $.string_literal,
@@ -139,6 +140,24 @@ module.exports = grammar({
       /0b[01][01_]*/,
       /0o[0-7][0-7_]*/,
       /[0-9][0-9_]*/,
+    )),
+
+    // Typed integer literal: a bare integer immediately followed by a
+    // type suffix. Kept as a separate rule (rather than extending
+    // `integer_literal`'s token) so the bare integer's lexer state stays
+    // identical to the pre-suffix grammar -- error recovery on unclosed
+    // brackets etc. is sensitive to the lexer's state machine.
+    typed_integer_literal: $ => seq(
+      $.integer_literal,
+      $.int_suffix,
+    ),
+
+    // Typed-integer suffix, attached without intervening whitespace via
+    // `token.immediate`. Closed set: i8..isize, u8..usize, nat.
+    int_suffix: _ => token.immediate(choice(
+      'i8', 'i16', 'i32', 'i64', 'isize',
+      'u8', 'u16', 'u32', 'u64', 'usize',
+      'nat',
     )),
 
     float_literal: _ => token(
