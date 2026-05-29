@@ -224,6 +224,7 @@ module.exports = grammar({
     // ───────────────────────────────────────────────────────────────────────
 
     use_decl: $ => seq(
+      repeat(field('attribute', $.attribute)),
       'use',
       field('path', $._use_tree),
       ';',

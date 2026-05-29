@@ -30649,6 +30649,16 @@
     "type": "use_decl",
     "named": true,
     "fields": {
+      "attribute": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "attribute",
+            "named": true
+          }
+        ]
+      },
       "path": {
         "multiple": false,
         "required": true,
