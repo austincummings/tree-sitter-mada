@@ -924,6 +924,10 @@
           "members": [
             {
               "type": "SYMBOL",
+              "name": "maybe_bound"
+            },
+            {
+              "type": "SYMBOL",
               "name": "_expr"
             },
             {
@@ -946,6 +950,10 @@
                 "members": [
                   {
                     "type": "SYMBOL",
+                    "name": "maybe_bound"
+                  },
+                  {
+                    "type": "SYMBOL",
                     "name": "_expr"
                   },
                   {
@@ -955,6 +963,23 @@
                 ]
               }
             ]
+          }
+        }
+      ]
+    },
+    "maybe_bound": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "maybe"
+        },
+        {
+          "type": "FIELD",
+          "name": "marker",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_expr"
           }
         }
       ]

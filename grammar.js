@@ -279,8 +279,17 @@ module.exports = grammar({
     ),
 
     _type_bound: $ => seq(
-      choice($._expr, $.lifetime),
-      repeat(seq('+', choice($._expr, $.lifetime))),
+      choice($.maybe_bound, $._expr, $.lifetime),
+      repeat(seq('+', choice($.maybe_bound, $._expr, $.lifetime))),
+    ),
+
+    // Relaxation of a default marker bound: `maybe Sized`. Only the
+    // implicitly-on `Sized` marker may be relaxed (the elaborator rejects
+    // any other marker here). Mirrors Rust's `?Sized`, spelled with a
+    // keyword to fit the ASCII-keyword house style.
+    maybe_bound: $ => seq(
+      'maybe',
+      field('marker', $._expr),
     ),
 
     // ───────────────────────────────────────────────────────────────────────

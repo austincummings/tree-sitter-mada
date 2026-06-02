@@ -37,7 +37,7 @@
 
 ; -- Other keywords ----------------------------------------------------------
 
-["as" "move" "with" "dyn" "extern" "mut"] @keyword
+["as" "move" "with" "dyn" "extern" "mut" "maybe"] @keyword
 
 ; -- Literals ----------------------------------------------------------------
 
