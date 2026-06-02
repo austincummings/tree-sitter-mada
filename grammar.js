@@ -829,11 +829,15 @@ module.exports = grammar({
       ')',
     )),
 
-    // f[A, B]  -- type application or square-bracket indexing
+    // f[A, B]  -- type application or square-bracket indexing.
+    // Uses `type_arg_list` (not `arg_list`) so a type-argument may be an
+    // associated-type equality `Name := Ty` (e.g. `T: Pointee[Metadata :=
+    // USize]`). The equality form is only meaningful in an interface-bound
+    // position; the elaborator rejects it elsewhere.
     type_call_expr: $ => prec(PREC.CALL, seq(
       field('function', $._expr_no_arrow),
       '[',
-      field('args', optional($.arg_list)),
+      field('args', optional($.type_arg_list)),
       ']',
     )),
 
@@ -863,6 +867,19 @@ module.exports = grammar({
     )),
 
     arg_list: $ => commaSep1($._term),
+
+    // Type-application arguments. Each is either a positional type argument
+    // or an associated-type equality `Name := Ty` (an `assoc_type_binding`).
+    type_arg_list: $ => commaSep1(choice($.assoc_type_binding, $._term)),
+
+    // `Name := Ty` inside a type-application bracket: binds the associated
+    // type `Name` of the bounded interface to `Ty`. Mada's `:=` definitional
+    // binding, matching `const`/`type`/`let`. See specs/interface-resolution.md.
+    assoc_type_binding: $ => seq(
+      field('name', $.identifier),
+      ':=',
+      field('type', $._term),
+    ),
 
     // &T  &mut T  &'a T  &'a mut T
     //
