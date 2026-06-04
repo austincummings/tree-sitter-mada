@@ -253,15 +253,28 @@ module.exports = grammar({
     ),
 
     _type_param: $ => choice(
-      $.lifetime_param, // 'a  or  'a: 'b + 'c
-      $.bounded_param,  // A: Bound + Bound
-      $.identifier,     // A  (shorthand for A: Type)
+      $.lifetime_param,   // 'a  or  'a: 'b + 'c
+      $.bounded_param,    // A: Bound + Bound   (optionally `:= Default`)
+      $.defaulted_param,  // A := Default        (bare param with a default)
+      $.identifier,       // A  (shorthand for A: Type)
     ),
 
+    // `:= Default` is the optional default tail (default type parameters).
+    // Same right-hand side as `assoc_type_binding` (`Name := Ty`); only
+    // type-forming declarations may use it (the elaborator rejects defaults
+    // on fn/spec fn/impl/axiom params).
     bounded_param: $ => seq(
       field('name', $.identifier),
       ':',
       field('bound', $._type_bound),
+      optional(seq(':=', field('default', $._term))),
+    ),
+
+    // A bare parameter carrying a default but no bound: `B := Empty`.
+    defaulted_param: $ => seq(
+      field('name', $.identifier),
+      ':=',
+      field('default', $._term),
     ),
 
     // 'a   or   'a: 'b + 'c   (lifetime declaration with optional outlives bounds)

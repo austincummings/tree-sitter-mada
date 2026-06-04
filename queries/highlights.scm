@@ -145,6 +145,7 @@
 ; -- Type / value parameters -------------------------------------------------
 
 (bounded_param name: (identifier) @type.parameter)
+(defaulted_param name: (identifier) @type.parameter)
 (type_params (identifier) @type.parameter)
 (param name: (identifier) @variable.parameter)
 (closure_param name: (identifier) @variable.parameter)
